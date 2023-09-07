@@ -13,6 +13,9 @@ function tamanhoPalco() {
 tamanhoPalco()
 
 
+setInterval(function(){
+    passarCima()
+},1000)
 
 function passarCima() {
 
