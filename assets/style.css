@@ -16,36 +16,10 @@ body{
 
 /* MOSQUITO MODIFICAÇÕES */
 
-.mosquito{
-    width: 60px;
-    height: 60px;
-}
 
-.mosquitonormal{
-    width: 60px;
-    height: 60px;
-    
-}
-
-.mosquitoD{
-    transform: scaleX(1);
-    width: 60px;
-    height: 60px;
-}
-.mosquitoE{
-    transform: scaleX(-1);
-    width: 80px;
-    height: 80px;
-}
-
-.tm{
-    width: 80px;
-    height: 80px;
-}
-
-.tg{
-    width: 110px;
-    height: 110px;
+img{
+    width: 50px;
+    height: 50px;
 }
 
 
