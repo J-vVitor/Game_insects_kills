@@ -12,14 +12,62 @@ body{
     background-size: 100% 50em;
     background-repeat: no-repeat;
     background-position: top center;
+
 }
+
+/* INICIO */
+
+#bginicio{
+    display: flex;
+    justify-content: center;
+}
+
+#inicio{
+    justify-content: center;
+    display: flex;
+    padding: 8px;
+}
+
+#btninicio{
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+#btninicio:hover{
+    background-color: rgb(230, 230, 230);
+}
+
 
 /* MOSQUITO MODIFICAÇÕES */
 
 
-img{
+.mosquito1{
     width: 50px;
     height: 50px;
+}
+
+.mosquito2{
+    width: 80px;
+    height: 80px;
+}
+
+.mosquito3{
+    width: 100px;
+    height: 100px;
+}
+
+
+.ladoD{
+    transform: scaleX(1);
+}
+.ladoE{
+    transform: scaleX(-1);
 }
 
 
@@ -40,20 +88,62 @@ img{
 }
 
 #vida{
+    float: left;
     padding: 4px;
     margin: auto 100px;
 }
 
 #vida img{
+    width: 39px;
+    height: 39px;
     margin-left: 10px;
 }
 
 #tempo{
+    float: left;
     padding: 10px;
     position: absolute;
     bottom: 0;
     margin: auto 40px;
+    font-weight: bold;
 }
+
+
+/* GAME OVER */
+
+#game_over, #vitoria{
+    width: 500px;
+    margin:100px auto;
+}
+
+#div_btn_fim, #div_btn_jogar_novamente{
+    display: flex;
+    justify-content:center;
+    position: relative;
+    bottom: 100px;
+    right: 10px;
+    padding: 8px;
+}
+
+
+#game_over_btn{
+    cursor:pointer;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.769);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:600;
+    width: 200px;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.408);
+
+}
+
+#game_over_btn:hover{
+    background-color: rgba(0, 0, 0, 0.842);
+}
+
 
 
 
