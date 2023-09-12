@@ -5,14 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="assets/style.css">
+    <script>
+        function iniciarJogo(){
+            var nivel = document.getElementById('niveis_jogo').value
+
+            
+            if(nivel === ''){
+                alert('Selecione um nível valido')
+                return false
+            }
+
+            window.location.href = 'jogo.html?' + nivel
+        }
+    </script>
 </head>
 <body>
     <div id="bginicio">
         <img src="assets/img/game.png" alt="">
     </div>
 
+    <div id="niveis">
+        <select id="niveis_jogo">
+            <option value="">-- Selecione o nível --</option>
+            <option value="facil">Fácil</option>
+            <option value="dificil">Difícil</option>
+        </select>
+    </div>
+
     <div id="inicio">
-        <button id="btninicio" onclick="window.location.href = 'index.html'"> Iniciar </button>
+        <button id="btninicio" onclick="iniciarJogo()"> Iniciar </button>
     </div>
 </body>
 </html>

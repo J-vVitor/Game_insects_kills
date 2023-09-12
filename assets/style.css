@@ -7,6 +7,11 @@
     overflow: hidden;
 }
 
+html{
+    cursor: url('img/mata_mosca.png') 30 30, auto;
+}
+
+
 body{
     background-image: url(img/bg.jpg);
     background-size: 100% 50em;
@@ -18,14 +23,30 @@ body{
 /* INICIO */
 
 #bginicio{
+    
     display: flex;
     justify-content: center;
 }
 
 #inicio{
+
     justify-content: center;
     display: flex;
     padding: 8px;
+}
+
+#niveis{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#niveis_jogo{
+    cursor: pointer;
+    font-size: 20px;
+    width: 300px;
+    padding: 10px;
+
 }
 
 #btninicio{

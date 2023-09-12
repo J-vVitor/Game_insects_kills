@@ -4,6 +4,17 @@ var largura = 0;
 var vidas = 1;
 var tempo = 10;
 
+var criarMosquitoTempo = 1500
+
+var nivel = document.location.search
+nivel = nivel.replace('?', '')
+
+if (nivel === 'facil') {
+    criarMosquitoTempo = 1300
+} else if (nivel === 'dificil') {
+    criarMosquitoTempo = 1100
+} 
+
 function tamanhoPalco() {
     altura = window.innerHeight - 90;
     largura = window.innerWidth - 90;
@@ -18,15 +29,15 @@ tamanhoPalco()
 var cronometro = setInterval(function () {
     tempo -= 1
 
-    if(tempo < 0 ){ 
+    if (tempo < 0) {
         clearInterval(cronometro)
         clearInterval(criarMosquito)
         window.location.href = 'vitoria.html'
-    }else{
+    } else {
         document.getElementById('cronometro').innerHTML = tempo
     }
 
-  
+
 }, 1000)
 
 
